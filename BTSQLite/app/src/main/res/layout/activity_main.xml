@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="725dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="571dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="113dp">
+
+
+            <EditText
+                android:id="@+id/editTextMaSv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mã sinh viên"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTenSv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tên sinh viên"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextMaLopSv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mã lớp"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="406dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/themsv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thêm" />
+
+                <Button
+                    android:id="@+id/xoasv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Xóa" />
+
+                <Button
+                    android:id="@+id/suasv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sửa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/querysv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Query" />
+
+                <Button
+                    android:id="@+id/gotoqll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quản lý Lớp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listViewsv"
+                android:layout_width="409dp"
+                android:layout_height="310dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="725dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="571dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="113dp">
+
+
+            <EditText
+                android:id="@+id/editTextMaLop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mã lớp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTenLop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tên Lớp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextSiSo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sĩ số"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="406dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/themlop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thêm" />
+
+                <Button
+                    android:id="@+id/xoalop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Xóa" />
+
+                <Button
+                    android:id="@+id/sualop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sửa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/querylop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Query" />
+
+                <Button
+                    android:id="@+id/gotoqlsv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quản lý Sinh Viên" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listViewlop"
+                android:layout_width="409dp"
+                android:layout_height="310dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
